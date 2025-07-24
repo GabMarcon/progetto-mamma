@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Progetto Mamma - Quiz</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="quiz-page-wrapper">
+      <div class="quiz-container">
+        <div id="quiz-box">
+          <div class="quiz-header">
+            <div id="progress-text" class="progress-info">Pergunta 1 / 10</div>
+            <div id="progress-bar">
+              <div id="progress-bar-full"></div>
+            </div>
+          </div>
+          <h2 id="question-text">Pergunta do quiz aparece aqui</h2>
+          <div id="answer-buttons" class="btn-grid"></div>
+          <div id="explanation-box" class="hidden">
+            <p id="explanation-text"></p>
+          </div>
+          <div class="quiz-controls">
+            <button id="next-btn" class="btn next-btn hidden">Próxima</button>
+          </div>
+        </div>
+        <div id="score-container" class="hidden">
+          <h2>Quiz Finalizado!</h2>
+          <p id="score-text">Sua pontuação foi X de Y.</p>
+          <div class="score-buttons">
+            <a href="praticare.html" class="btn">Tentar Outro Quiz</a>
+            <a href="studiare.html" class="btn-back">Voltar para os Estudos</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/quiz-data.js"></script>
+    <script src="js/quiz.js"></script>
+  </body>
+</html>

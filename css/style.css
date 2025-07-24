@@ -1,0 +1,277 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+:root {
+  --primary-color: #006400;
+  --secondary-color: #ce2b37;
+  --light-color: #f0f2f5;
+  --white-color: #ffffff;
+  --dark-color: #333;
+  --correct-color: #28a745;
+  --incorrect-color: #dc3545;
+  --neutral-gray: #ccc;
+  --light-gray: #e9ecef;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  background-color: var(--light-color);
+  color: var(--dark-color);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.container {
+  max-width: 960px;
+  margin: auto;
+  padding: 0 20px;
+}
+header {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  padding: 2rem 0;
+  text-align: center;
+}
+main {
+  flex-grow: 1;
+  padding: 2rem 0;
+}
+footer {
+  background-color: var(--dark-color);
+  color: var(--white-color);
+  text-align: center;
+  padding: 1rem 0;
+}
+.btn {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  padding: 12px 28px;
+  text-decoration: none;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+.btn:hover {
+  background-color: #007a00;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+.btn-back {
+  display: inline-block;
+  margin-top: 1.5rem;
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 600;
+}
+.main-nav {
+  margin-top: 2rem;
+}
+.quiz-page-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  padding: 2rem 1rem;
+}
+.quiz-container {
+  width: 100%;
+  max-width: 720px;
+  background: var(--white-color);
+  border-radius: 15px;
+  padding: 2rem 2.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+.quiz-header {
+  margin-bottom: 2rem;
+}
+.progress-info {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+#progress-bar {
+  width: 100%;
+  height: 10px;
+  background-color: var(--light-gray);
+  border-radius: 5px;
+  overflow: hidden;
+}
+#progress-bar-full {
+  height: 100%;
+  width: 0%;
+  background-color: var(--primary-color);
+  border-radius: 5px;
+  transition: width 0.4s ease-in-out;
+}
+#question-text {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 2.5rem;
+  color: var(--dark-color);
+  line-height: 1.4;
+}
+.btn-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+@media (min-width: 600px) {
+  .btn-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.answer-btn {
+  background-color: var(--white-color);
+  border: 2px solid var(--light-gray);
+  color: var(--dark-color);
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: left;
+  cursor: pointer;
+  border-radius: 10px;
+  position: relative;
+  transition: all 0.2s;
+}
+.answer-btn:hover:not([disabled]) {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+}
+.answer-btn[disabled] {
+  cursor: not-allowed;
+}
+.answer-btn::after {
+  content: "";
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%) scale(0);
+  transition: transform 0.2s ease-in-out;
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.answered .answer-btn.correct::after,
+.answered .answer-btn.incorrect::after {
+  transform: translateY(-50%) scale(1);
+}
+.answer-btn.correct {
+  background-color: #f0fff4;
+  border-color: var(--correct-color);
+  color: var(--correct-color);
+}
+.answer-btn.correct::after {
+  background-color: var(--correct-color);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z'/%3E%3C/svg%3E");
+}
+.answer-btn.incorrect {
+  background-color: #fff5f5;
+  border-color: var(--incorrect-color);
+  color: var(--incorrect-color);
+}
+.answer-btn.incorrect::after {
+  background-color: var(--incorrect-color);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z'/%3E%3C/svg%3E");
+}
+.quiz-controls {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 2rem;
+  border-top: 1px solid var(--light-gray);
+  padding-top: 1.5rem;
+}
+.next-btn {
+  background-color: var(--secondary-color);
+}
+.next-btn:hover {
+  background-color: #e03c49;
+}
+#score-container {
+  text-align: center;
+}
+#score-container h2 {
+  color: var(--primary-color);
+  font-size: 2.5rem;
+}
+#score-text {
+  font-size: 1.2rem;
+  margin: 1rem 0 2rem 0;
+}
+.score-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+@media (min-width: 600px) {
+  .score-buttons {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+.quiz-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  text-align: center;
+}
+.quiz-link {
+  display: block;
+  background: var(--white-color);
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: 600;
+  border: 2px solid transparent;
+  transition: border-color 0.3s, color 0.3s;
+}
+.quiz-link:hover {
+  border-color: var(--primary-color);
+}
+#explanation-box {
+  margin-top: 2rem;
+  padding: 1.25rem 1.5rem;
+  background-color: #f0f2f5;
+  border-top: 3px solid var(--primary-color);
+  border-radius: 0 0 10px 10px;
+  animation: fadeIn 0.5s ease;
+}
+#explanation-box p {
+  margin: 0;
+  line-height: 1.7;
+  font-size: 0.95rem;
+  color: #333;
+}
+#explanation-box p::before {
+  content: "💡";
+  margin-right: 0.75rem;
+  font-size: 1.2rem;
+  float: left;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.hidden {
+  display: none;
+}
