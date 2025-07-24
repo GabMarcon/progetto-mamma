@@ -1,453 +1,593 @@
 const quizzes = {
   presente_indicativo: [
     {
-      pergunta: "1. Io ______ l'italiano.",
-      opcoes: ["parli", "parlo", "parla", "parlano"],
-      resposta: "parlo",
+      pergunta: "1. Non ______ mai cosa ______, è troppo indecisa.",
+      opcoes: [
+        "sa, sceglie",
+        "conosce, scegli",
+        "sa, scegliere",
+        "conosce, sceglie",
+      ],
+      resposta: "sa, sceglie",
       explicacao:
-        "Para 'Io' (eu), a terminação regular do presente para verbos em -are, como 'parlare', é <b>-o</b>.",
+        "Usa-se 'sapere' (<b>sa</b>) para uma informação e o verbo 'scegliere' (escolher) conjugado na terceira pessoa (<b>sceglie</b>).",
     },
     {
-      pergunta: "2. Tu ______ un caffè?",
-      opcoes: ["prende", "prendiamo", "prendo", "prendi"],
-      resposta: "prendi",
+      pergunta: "2. Noi ______ le conclusioni dai fatti, non dalle opinioni.",
+      opcoes: ["traiamo", "tradiamo", "tratteniamo", "traduciamo"],
+      resposta: "traiamo",
       explicacao:
-        "Para 'Tu' (você), a terminação do presente para verbos em -ere, como 'prendere', é <b>-i</b>.",
+        "O verbo 'trarre' (tirar, extrair) é irregular. A forma para 'noi' no presente é <b>traiamo</b>.",
     },
     {
-      pergunta: "3. Lei ______ un libro interessante.",
-      opcoes: ["legge", "leggi", "leggo", "leggiamo"],
-      resposta: "legge",
+      pergunta:
+        "3. Se voi non ______ le luci quando uscite, la bolletta ______.",
+      opcoes: [
+        "spegnete, sale",
+        "spegnate, sale",
+        "spengete, salite",
+        "spegnete, salta",
+      ],
+      resposta: "spegnete, sale",
       explicacao:
-        "Para 'Lei' (ela), a terminação do presente para verbos em -ere, como 'leggere', é <b>-e</b>.",
+        "A conjugação de 'spegnere' para 'voi' é <b>spegnete</b>. O verbo 'salire' (subir, aumentar) para 'la bolletta' (ela) é <b>sale</b>.",
     },
     {
-      pergunta: "4. Noi ______ a casa tardi.",
-      opcoes: ["tornate", "tornano", "torniamo", "torna"],
-      resposta: "torniamo",
+      pergunta: "4. A cosa ______ questo silenzio improvviso?",
+      opcoes: ["si deve", "deve", "dovrebbe", "si trattiene"],
+      resposta: "si deve",
       explicacao:
-        "Para 'Noi' (nós), a terminação do presente para quase todos os verbos é <b>-iamo</b>.",
+        "A expressão 'dovuto a' indica causa. Na forma impessoal, usa-se o reflexivo: 'a cosa <b>si deve</b>?' (a que se deve?).",
     },
     {
-      pergunta: "5. Voi ______ la lezione?",
-      opcoes: ["capisco", "capisce", "capite", "capiscono"],
-      resposta: "capite",
+      pergunta: "5. Loro ______ a rispettare le scadenze.",
+      opcoes: ["tengono", "ottengono", "mantengono", "appartengono"],
+      resposta: "tengono",
       explicacao:
-        "Para 'Voi' (vocês), a terminação do presente para verbos em -ire, como 'capire', é <b>-ite</b>.",
+        "A expressão 'tenere a qualcosa' significa 'dar importância a algo'. A conjugação para 'loro' de 'tenere' é <b>tengono</b>.",
     },
     {
-      pergunta: "6. Loro ______ la porta.",
-      opcoes: ["apriamo", "aprono", "apri", "apre"],
-      resposta: "aprono",
+      pergunta: "6. Tu ______ il discorso e io ______ gli appunti.",
+      opcoes: ["fai, prendo", "fai, tengo", "fai, scrivo", "dici, prendo"],
+      resposta: "fai, prendo",
       explicacao:
-        "Para 'Loro' (eles/elas), a terminação do presente para verbos em -ire, como 'aprire', é <b>-ono</b>.",
+        "As expressões corretas são 'fare un discorso' (fazer um discurso) e 'prendere appunti' (fazer anotações). As conjugações são <b>fai</b> e <b>prendo</b>.",
     },
     {
-      pergunta: "7. Io ______ molto felice oggi.",
-      opcoes: ["siamo", "sono", "è", "sei"],
-      resposta: "sono",
+      pergunta: "7. Io non ______ più le sue bugie, me ne ______.",
+      opcoes: [
+        "credo, vado",
+        "sopporto, vado",
+        "reggo, vado",
+        "sostengo, parto",
+      ],
+      resposta: "reggo, vado",
       explicacao:
-        "O verbo 'essere' (ser/estar) é irregular. A conjugação para 'Io' é <b>sono</b>.",
+        "A expressão 'non reggere più' significa 'não aguentar mais'. 'Andarsene' (ir embora) se conjuga como <b>me ne vado</b>.",
     },
     {
-      pergunta: "8. Tu dove ______?",
-      opcoes: ["va", "vado", "vai", "andiamo"],
-      resposta: "vai",
+      pergunta: "8. A quest'ora, di solito, il sole ______ già.",
+      opcoes: ["sorge", "sale", "spunta", "appare"],
+      resposta: "sorge",
       explicacao:
-        "O verbo 'andare' (ir) é irregular. A conjugação para 'Tu' é <b>vai</b>.",
+        "O verbo específico para o nascer do sol é 'sorgere'. A conjugação na terceira pessoa é <b>sorge</b>.",
     },
     {
-      pergunta: "9. Cosa ______ stasera?",
-      opcoes: ["faccio", "fa", "fai", "facciamo"],
-      resposta: "fai",
+      pergunta: "9. Se non ti ______ bene, ______ a casa.",
+      opcoes: [
+        "senti, rimani",
+        "senti, resta",
+        "senti, stai",
+        "ascolti, rimani",
+      ],
+      resposta: "senti, rimani",
       explicacao:
-        "O verbo 'fare' (fazer) é irregular. A conjugação para 'Tu' é <b>fai</b>.",
+        "'Sentirsi bene' é a expressão para se sentir bem. 'Rimanere a casa' é a expressão para ficar em casa. As formas para 'tu' são <b>senti</b> e <b>rimani</b>.",
     },
     {
-      pergunta: "10. Loro non ______ mai la verità.",
-      opcoes: ["dice", "diciamo", "dicono", "dico"],
-      resposta: "dicono",
+      pergunta: "10. Questo quadro ______ un grande valore affettivo per me.",
+      opcoes: ["possiede", "detiene", "contiene", "ha"],
+      resposta: "possiede",
       explicacao:
-        "O verbo 'dire' (dizer) é irregular. A conjugação para 'Loro' é <b>dicono</b>.",
+        "Embora 'ha' não seja incorreto, <b>possiede</b> (de 'possedere') é um verbo mais preciso e sofisticado para indicar posse de valor ou qualidades.",
     },
   ],
   passato_prossimo: [
     {
-      pergunta: "1. Ieri io ______ una mela.",
-      opcoes: ["sono mangiato", "ho mangiato", "mangiavo", "ho mangiata"],
-      resposta: "ho mangiato",
+      pergunta: "1. Appena ______ la notizia, ti ho chiamato.",
+      opcoes: ["ho saputo", "sapevo", "ho conosciuto", "conoscevo"],
+      resposta: "ho saputo",
       explicacao:
-        "O verbo 'mangiare' usa o auxiliar <b>avere</b> (ho). O particípio 'mangiato' não varia com 'avere'.",
+        "No passado, 'sapere' no Passato Prossimo (<b>ho saputo</b>) significa 'descobrir/ficar sabendo', uma ação pontual. 'Sapevo' (Imperfetto) significaria 'eu já sabia'.",
     },
     {
-      pergunta: "2. Maria ______ un bel film.",
-      opcoes: ["è vista", "ha veduto", "ha visto", "vedeva"],
-      resposta: "ha visto",
-      explicacao:
-        "O verbo 'vedere' usa o auxiliar <b>avere</b> (ha). O particípio passado irregular de 'vedere' é <b>visto</b>.",
-    },
-    {
-      pergunta: "3. Noi ______ molto ieri sera.",
-      opcoes: ["abbiamo dormito", "siamo dormiti", "dormivamo", "dormimmo"],
-      resposta: "abbiamo dormito",
-      explicacao:
-        "O verbo 'dormire' usa o auxiliar <b>avere</b> (abbiamo), pois não indica movimento ou mudança de estado.",
-    },
-    {
-      pergunta: "4. L'anno scorso, tu ______ a Roma?",
-      opcoes: ["andavi", "hai andato", "fosti", "sei andato"],
-      resposta: "sei andato",
-      explicacao:
-        "O verbo 'andare' é um verbo de movimento e usa o auxiliar <b>essere</b> (sei). O particípio é 'andato'.",
-    },
-    {
-      pergunta: "5. Laura ______ ieri mattina.",
-      opcoes: ["ha partito", "partiva", "è partita", "è partira"],
-      resposta: "è partita",
-      explicacao:
-        "'Partire' é um verbo de movimento que usa <b>essere</b>. Como o sujeito 'Laura' é feminino, o particípio concorda: <b>partita</b>.",
-    },
-    {
-      pergunta: "6. Voi ______ i biglietti?",
-      opcoes: ["siete comprati", "compravate", "compraste", "avete comprato"],
-      resposta: "avete comprato",
-      explicacao:
-        "O verbo 'comprare' usa o auxiliar <b>avere</b> (avete), pois é transitivo (comprar o quê? os biglietti).",
-    },
-    {
-      pergunta: "7. Marco e Luca ______ in ritardo.",
+      pergunta:
+        "2. Le tue amiche non ______ perché ______ male tutto il giorno.",
       opcoes: [
-        "hanno arrivato",
-        "arrivavano",
-        "sono arrivati",
-        "sono arrivato",
+        "sono uscite, sono state",
+        "hanno uscito, hanno stato",
+        "sono uscite, hanno state",
+        "uscivano, stavano",
       ],
-      resposta: "sono arrivati",
+      resposta: "sono uscite, sono state",
       explicacao:
-        "'Arrivare' usa <b>essere</b>. Como o sujeito é masculino e plural ('Marco e Luca'), o particípio concorda: <b>arrivati</b>.",
+        "Ambos os verbos ('uscire' e 'stare') usam o auxiliar 'essere'. O particípio deve concordar com o sujeito feminino plural: <b>siamo uscite, sono state</b>.",
     },
     {
-      pergunta: "8. Le ragazze ______ a casa presto.",
-      opcoes: ["hanno tornato", "tornavano", "sono tornate", "sono tornati"],
-      resposta: "sono tornate",
+      pergunta: "3. Non ti ______ la giacca? Faceva freddo.",
+      opcoes: ["sei messo", "ti sei messo", "hai messo", "ti hai messo"],
+      resposta: "ti sei messo",
       explicacao:
-        "'Tornare' usa <b>essere</b>. Como o sujeito é feminino e plural ('le ragazze'), o particípio concorda: <b>tornate</b>.",
+        "'Mettersi' (colocar em si mesmo) é reflexivo e usa 'essere'. O pronome vem antes do auxiliar: <b>ti sei messo</b>.",
     },
     {
-      pergunta: "9. Stamattina, io ______ alle sette.",
+      pergunta: "4. Quante pagine ______ oggi?",
+      opcoes: ["hai letto", "hai leggeto", "sei letto", "leggevi"],
+      resposta: "hai letto",
+      explicacao:
+        "'Leggere' usa 'avere' e tem um particípio passado irregular: <b>letto</b>.",
+    },
+    {
+      pergunta: "5. La settimana scorsa ______ un sacco di lavoro.",
+      opcoes: ["abbiamo avuto", "siamo stati", "avevamo", "eravamo"],
+      resposta: "abbiamo avuto",
+      explicacao:
+        "Para indicar um evento concluído ('tivemos muito trabalho'), usa-se o Passato Prossimo do verbo 'avere': <b>abbiamo avuto</b>.",
+    },
+    {
+      pergunta: "6. Appena arrivati, ______ le valigie in camera.",
+      opcoes: ["abbiamo messo", "siamo messi", "mettevamo", "abbiamo ponuto"],
+      resposta: "abbiamo messo",
+      explicacao:
+        "'Mettere' usa 'avere'. Seu particípio passado irregular é <b>messo</b>.",
+    },
+    {
+      pergunta: "7. Perché non ______ prima?",
       opcoes: [
-        "mi ho svegliato",
-        "mi svegliavo",
-        "mi sono svegliato",
-        "svegliato",
+        "l'hai detto",
+        "lo hai detto",
+        "hai detto questo",
+        "l'hai dillo",
       ],
-      resposta: "mi sono svegliato",
+      resposta: "l'hai detto",
       explicacao:
-        "Verbos reflexivos como 'svegliarsi' sempre usam o auxiliar <b>essere</b> no Passato Prossimo.",
+        "Quando o pronome de objeto direto ('lo') vem antes do auxiliar 'avere', ele se contrai para <b>l'</b> e o particípio concorda com ele (detto).",
     },
     {
-      pergunta: "10. Cosa ______ ieri? Non ti ho visto.",
-      opcoes: ["facevi", "sei fatto", "facesti", "hai fatto"],
-      resposta: "hai fatto",
+      pergunta: "8. Il film che ______ ieri sera era bellissimo.",
+      opcoes: ["abbiamo visto", "siamo visti", "vedevamo", "abbiamo veduto"],
+      resposta: "abbiamo visto",
       explicacao:
-        "O verbo 'fare' usa o auxiliar <b>avere</b>. Seu particípio passado irregular é <b>fatto</b>.",
+        "'Vedere' usa 'avere' e seu particípio irregular mais comum é <b>visto</b>.",
+    },
+    {
+      pergunta: "9. Da quando ______ a Roma, la mia vita è cambiata.",
+      opcoes: [
+        "mi sono trasferito",
+        "mi ho trasferito",
+        "trasferivo",
+        "ho trasferito",
+      ],
+      resposta: "mi sono trasferito",
+      explicacao:
+        "O verbo 'trasferirsi' (mudar-se) é reflexivo e, portanto, usa o auxiliar 'essere': <b>mi sono trasferito</b>.",
+    },
+    {
+      pergunta: "10. Non ______ tempo di finire il progetto.",
+      opcoes: ["c'è stato", "c'era", "ha stato", "è stato"],
+      resposta: "c'è stato",
+      explicacao:
+        "A expressão 'esserci' no passado se torna <b>c'è stato</b> para indicar que 'não houve tempo', uma ocorrência pontual.",
     },
   ],
   preposizioni: [
     {
-      pergunta: "1. Questo è il libro ______ professore.",
-      opcoes: ["di", "a", "da", "in"],
-      resposta: "di",
+      pergunta:
+        "1. Smetti ______ lamentarti ______ tutto e prova ______ essere più positivo.",
+      opcoes: ["di, di, a", "a, di, a", "di, per, a", "a, su, di"],
+      resposta: "di, di, a",
       explicacao:
-        "A preposição <b>di</b> é usada para indicar posse, como em 'o livro do professor'.",
+        "A estrutura correta é 'smettere <b>di</b>', 'lamentarsi <b>di</b>' e 'provare <b>a</b>'.",
     },
     {
-      pergunta: "2. Domani vado ______ Roma.",
-      opcoes: ["in", "da", "a", "di"],
-      resposta: "a",
+      pergunta:
+        "2. Non sono abituato ______ alzarmi così presto ______ mattina.",
+      opcoes: ["ad, alla", "a, la", "di, alla", "ad, la"],
+      resposta: "ad, alla",
       explicacao:
-        "Usa-se a preposição <b>a</b> antes de nomes de cidades e pequenas ilhas.",
+        "A expressão é 'essere abituato <b>a</b>'. Como a palavra seguinte começa com vogal, usa-se a forma eufônica <b>ad</b>. 'Di mattina' ou '<b>alla</b> mattina' são ambas corretas.",
     },
     {
-      pergunta: "3. Torno ______ casa alle cinque.",
-      opcoes: ["da", "a", "in", "per"],
-      resposta: "a",
+      pergunta:
+        "3. Consiste ______ analizzare i dati e ______ trarre conclusioni.",
+      opcoes: ["nell', nel", "in, a", "ad, a", "di, di"],
+      resposta: "nell', nel",
       explicacao:
-        "A expressão fixa para 'em casa' ou 'para casa' é <b>a casa</b>.",
+        "O verbo 'consistere' rege a preposição <b>in</b>. Como os verbos seguintes estão no infinitivo substantivado, temos IN+LO -> <b>nello</b> (analizzare) e IN+LO -> <b>nel</b> (trarre).",
     },
     {
-      pergunta: "4. Andiamo a mangiare ______ amici.",
-      opcoes: ["per", "su", "tra", "con"],
-      resposta: "con",
-      explicacao: "A preposição <b>con</b> é usada para indicar companhia.",
+      pergunta:
+        "4. Ho deciso ______ partecipare ______ conferenza ______ Roma.",
+      opcoes: ["di, alla, di", "a, alla, a", "di, a, di", "di, alla, a"],
+      resposta: "di, alla, a",
+      explicacao:
+        "A estrutura é 'decidere <b>di</b>', 'partecipare <b>a</b>' (a + la conferenza -> <b>alla</b>) e a cidade de destino usa <b>a</b>.",
     },
     {
-      pergunta: "5. Vengo ______ Brasile.",
-      opcoes: ["dal", "da", "del", "di"],
-      resposta: "da",
+      pergunta: "5. Si è arrabbiato ______ me ______ nessun motivo valido.",
+      opcoes: ["con, per", "a, per", "con, di", "verso, da"],
+      resposta: "con, per",
       explicacao:
-        "A preposição <b>da</b> é usada para indicar origem ou proveniência de um lugar.",
+        "A estrutura correta é 'arrabbiarsi <b>con</b> qualcuno' e '<b>per</b> un motivo'.",
     },
     {
-      pergunta: "6. Ho comprato un regalo ______ te.",
-      opcoes: ["per", "con", "su", "fra"],
-      resposta: "per",
+      pergunta: "6. ______ furia ______ scrivere, ho fatto molti errori.",
+      opcoes: ["Nella, di", "In, di", "Per la, a", "Con, per"],
+      resposta: "Nella, di",
       explicacao:
-        "A preposição <b>per</b> é usada para indicar finalidade ou o destinatário de algo.",
+        "A expressão idiomática é '(essere) <b>in</b> fretta/furia' (IN+LA -> <b>Nella</b>). A preposição que segue é <b>di</b>: 'furia di scrivere'.",
     },
     {
-      pergunta: "7. Il gatto è ______ albero.",
-      opcoes: ["in", "a", "con", "su"],
-      resposta: "su",
+      pergunta:
+        "7. È inutile insistere, non riesco ______ fare ______ meno del caffè.",
+      opcoes: ["a, a", "di, di", "a, di", "di, a"],
+      resposta: "a, a",
       explicacao:
-        "A preposição <b>su</b> indica que algo está sobre ou em cima de outra coisa.",
+        "As expressões são 'riuscire <b>a</b> fare qualcosa' e 'fare <b>a</b> meno di qualcosa'.",
     },
     {
-      pergunta: "8. Stasera vado ______ Marco.",
-      opcoes: ["a", "da", "in", "di"],
-      resposta: "da",
+      pergunta:
+        "8. ______ quanto ne so, il negozio chiude ______ venti minuti.",
+      opcoes: ["Per, tra", "Da, in", "A, fra", "Secondo, in"],
+      resposta: "Per, tra",
       explicacao:
-        "Usa-se <b>da</b> + nome de pessoa para indicar que se vai ao local onde essa pessoa está (casa, trabalho, etc.).",
+        "A expressão é '<b>Per</b> quanto ne so' (Pelo que eu sei). Para indicar tempo futuro, usa-se <b>tra</b> ou fra.",
     },
     {
-      pergunta: "9. Il treno parte ______ due ore.",
-      opcoes: ["in", "fra", "a", "per"],
-      resposta: "fra",
+      pergunta: "9. Si è laureato ______ medicina ______ pieni voti.",
+      opcoes: ["in, a", "a, con", "in, con", "di, a"],
+      resposta: "in, a",
       explicacao:
-        "As preposições <b>tra</b> ou <b>fra</b> são usadas para indicar um período de tempo no futuro ('daqui a...').",
+        "'Laurearsi' rege a preposição <b>in</b> para a área de estudo. A expressão para notas máximas é '<b>a</b> pieni voti'.",
     },
     {
-      pergunta: "10. Parliamo ______ politica.",
-      opcoes: ["su", "di", "per", "con"],
-      resposta: "di",
+      pergunta:
+        "10. Non c'è niente ______ fare, bisogna adattarsi ______ situazione.",
+      opcoes: ["da, alla", "a, la", "di, la", "da, a"],
+      resposta: "da, alla",
       explicacao:
-        "A preposição <b>di</b> é usada para introduzir o assunto ou tópico de uma conversa ('falar de...').",
+        "A estrutura é 'niente <b>da</b> fare' (sentido passivo). O verbo 'adattarsi' rege a preposição 'a' (A + LA -> <b>alla</b>).",
     },
   ],
   futuro_semplice: [
     {
-      pergunta: "1. Domani io ______ la nonna.",
-      opcoes: ["visiterò", "visito", "visitavo", "ho visitato"],
-      resposta: "visiterò",
+      pergunta: "1. Finché non ______ le prove, non ______ nulla.",
+      opcoes: [
+        "vedrò, affermerò",
+        "vedo, affermo",
+        "avrò visto, affermo",
+        "vedrò, affermerei",
+      ],
+      resposta: "vedrò, affermerò",
       explicacao:
-        "Para uma ação futura, usamos o Futuro Simples. A terminação para 'io' é <b>-ò</b>.",
+        "Ambas as ações estão no futuro. O futuro irregular de 'vedere' para 'io' é <b>vedrò</b>, e o de 'affermare' (um verbo mais formal) é <b>affermerò</b>.",
     },
     {
-      pergunta: "2. Tu cosa ______ per cena?",
-      opcoes: ["cucini", "cucinavi", "cucinerai", "hai cucinato"],
-      resposta: "cucinerai",
+      pergunta:
+        "2. Chissà quanto ______ quel quadro. Sicuramente non ce lo ______.",
+      opcoes: [
+        "costerà, potremo permettere",
+        "costa, possiamo",
+        "sarebbe costato, potremmo",
+        "costerà, potremmo permettere",
+      ],
+      resposta: "costerà, potremo permettere",
       explicacao:
-        "Para uma pergunta sobre o futuro, usamos o Futuro Simples. A terminação para 'tu' é <b>-ai</b>.",
+        "A primeira parte é o futuro de suposição (<b>costerà</b>). A segunda é uma consequência futura de 'potersi permettere' para 'noi' (<b>potremo permettere</b>).",
     },
     {
-      pergunta: "3. Lui ______ il nuovo progetto.",
-      opcoes: ["finisce", "finirà", "finiva", "ha finito"],
-      resposta: "finirà",
+      pergunta: "3. Appena ______ possibile, ______ un viaggio.",
+      opcoes: [
+        "sarà, intraprenderemo",
+        "è, faremo",
+        "sarà, faremmo",
+        "fosse, faremo",
+      ],
+      resposta: "sarà, intraprenderemo",
       explicacao:
-        "Ação futura. A terminação do futuro para 'lui' em verbos -ire é <b>-à</b>.",
+        "Usa-se o futuro para a condição futura (<b>sarà</b>). 'Intraprendere' (empreender/iniciar) é um sinônimo mais sofisticado para 'fare'. O futuro para 'noi' é <b>intraprenderemo</b>.",
     },
     {
-      pergunta: "4. Noi ______ un viaggio in Italia.",
-      opcoes: ["facciamo", "faremo", "facevamo", "abbiamo fatto"],
-      resposta: "faremo",
+      pergunta:
+        "4. Se non ti sbrighi, ______ di nuovo e ______ la coincidenza.",
+      opcoes: [
+        "farai tardi, perderai",
+        "fai tardi, perdi",
+        "faresti tardi, perderesti",
+        "farai tardi, perderei",
+      ],
+      resposta: "farai tardi, perderai",
       explicacao:
-        "O verbo 'fare' é irregular no futuro. Para 'noi', a forma é <b>faremo</b>.",
+        "Ambas são consequências futuras de uma ação presente. A conjugação para 'tu' no futuro é <b>farai</b> e <b>perderai</b>.",
     },
     {
-      pergunta: "5. Voi ______ la verità?",
-      opcoes: ["dite", "dicevate", "direte", "avete detto"],
-      resposta: "direte",
+      pergunta: "5. Col tempo, ______ che ______ ragione io.",
+      opcoes: [
+        "capirai, avevo",
+        "capisci, ho",
+        "capirai, avrò",
+        "capiresti, avessi",
+      ],
+      resposta: "capirai, avevo",
       explicacao:
-        "O verbo 'dire' é irregular no futuro. Para 'voi', a forma é <b>direte</b>.",
+        "A ação de entender ocorrerá no futuro (<b>capirai</b>), mas se refere a um fato do passado ('que eu tinha razão'), que se expressa com o Imperfetto (<b>avevo</b>).",
     },
     {
-      pergunta: "6. Loro ______ molto felici di vederti.",
-      opcoes: ["sono", "erano", "saranno", "sono stati"],
-      resposta: "saranno",
+      pergunta: "6. Da grande, mio figlio ______ l'architetto, ne sono sicura.",
+      opcoes: ["farà", "sarà", "diventerà", "vorrà fare"],
+      resposta: "farà",
       explicacao:
-        "O verbo 'essere' é irregular no futuro. Para 'loro', a forma é <b>saranno</b>.",
+        "Para profissões, a construção mais comum e idiomática em italiano é com o verbo 'fare': 'fare l'architetto', 'fare il medico', etc. O futuro é <b>farà</b>.",
     },
     {
-      pergunta: "7. Io e te ______ insieme per sempre.",
-      opcoes: ["resteremo", "restiamo", "restavamo", "siamo restati"],
-      resposta: "resteremo",
+      pergunta:
+        "7. Non ti preoccupare, quando ______ il momento, ______ cosa dire.",
+      opcoes: [
+        "verrà, saprai",
+        "viene, sai",
+        "verrà, sapresti",
+        "venisse, saprai",
+      ],
+      resposta: "verrà, saprai",
       explicacao:
-        "'Io e te' é 'noi'. A terminação do futuro para 'noi' é <b>-emo</b>.",
+        "Ambas ações no futuro. 'Venire' e 'sapere' são irregulares. As formas para 'tu' e 'lui' são <b>verrà</b> e <b>saprai</b>.",
     },
     {
-      pergunta: "8. Tu ______ con noi al cinema?",
-      opcoes: ["vieni", "verrai", "venivi", "sei venuto"],
-      resposta: "verrai",
+      pergunta: "8. Promettimi che ______ qualunque cosa accada.",
+      opcoes: ["rimarrai", "rimani", "rimarresti", "rimanga"],
+      resposta: "rimarrai",
       explicacao:
-        "O verbo 'venire' é irregular no futuro. Para 'tu', a forma é <b>verrai</b>.",
+        "O verbo 'rimanere' tem um futuro irregular. A forma para 'tu' é <b>rimarrai</b>.",
     },
     {
-      pergunta: "9. Chissà dove ______ adesso Marco...",
-      opcoes: ["è", "sarà", "era", "è stato"],
-      resposta: "sarà",
+      pergunta: "9. Non so come, ma prima o poi ne ______ fuori.",
+      opcoes: ["verremo", "veniamo", "saremo venuti", "verremmo"],
+      resposta: "verremo",
       explicacao:
-        "Aqui, o futuro é usado para expressar uma dúvida ou suposição no presente. 'Onde será que ele está?'",
+        "A expressão 'venirne fuori' significa 'sair de uma situação difícil'. O futuro irregular de 'venire' para 'noi' é <b>verremo</b>.",
     },
     {
-      pergunta: "10. Non ti preoccupare, ______ tutto bene.",
-      opcoes: ["va", "andava", "è andato", "andrà"],
-      resposta: "andrà",
+      pergunta:
+        "10. A giudicare dal traffico, ______ un'altra volta in ritardo.",
+      opcoes: ["arriveremo", "arriviamo", "saremo arrivati", "arriveremmo"],
+      resposta: "arriveremo",
       explicacao:
-        "Para expressar uma certeza ou esperança futura, usamos o Futuro Simples. A forma correta é 'tutto <b>andrà</b> bene'.",
+        "Este é um futuro que expressa uma dedução lógica, quase uma certeza. A forma para 'noi' é <b>arriveremo</b>.",
     },
   ],
   preposizioni_articolate: [
     {
-      pergunta: "1. Vado ______ cinema stasera.",
-      opcoes: ["al", "il", "lo", "allo"],
-      resposta: "al",
+      pergunta:
+        "1. La discussione verte ______ argomenti trattati ______ riunione.",
+      opcoes: ["sugli, nella", "su, in", "degli, alla", "agli, della"],
+      resposta: "sugli, nella",
       explicacao:
-        "A expressão é 'andare <b>a</b>'. 'Cinema' é masculino e começa com consoante, então o artigo é '<b>il</b>'. A + IL = <b>AL</b>.",
+        "O verbo 'vertere' (tratar de) rege a preposição 'su' (SU+GLI -> <b>sugli</b>). O local 'nella riunione' usa IN+LA -> <b>nella</b>.",
     },
     {
-      pergunta: "2. Il colore ______ cielo è blu.",
-      opcoes: ["il", "del", "di", "dal"],
-      resposta: "del",
+      pergunta:
+        "2. Ho messo il quadro sopra ______ camino, proprio ______ angolo.",
+      opcoes: ["al, nell'", "il, l'", "al, all'", "il, nell'"],
+      resposta: "al, nell'",
       explicacao:
-        "A preposição para posse é '<b>di</b>'. O artigo para 'cielo' é '<b>il</b>'. DI + IL = <b>DEL</b>.",
+        "A expressão é 'sopra <b>a</b>l camino'. A preposição para 'angolo' é 'in' (IN+L' -> <b>nell'</b>).",
     },
     {
-      pergunta: "3. Mettiamo i libri ______ zaino.",
-      opcoes: ["lo", "in", "nello", "lo"],
-      resposta: "nello",
+      pergunta:
+        "3. La qualità ______ ingredienti influisce ______ sapore finale.",
+      opcoes: ["degli, sul", "dei, al", "degli, al", "dei, sul"],
+      resposta: "degli, sul",
       explicacao:
-        "A preposição é '<b>in</b>'. 'Zaino' começa com 'z', então o artigo é '<b>lo</b>'. IN + LO = <b>NELLO</b>.",
+        "A qualidade '<b>di</b>' (DI+GLI -> <b>degli</b>) e 'influire <b>su</b>' (SU+IL -> <b>sul</b>).",
     },
     {
-      pergunta: "4. Scrivo una lettera ______ amici.",
-      opcoes: ["i", "a", "agli", "gli"],
-      resposta: "agli",
+      pergunta:
+        "4. Il sentiero si snoda ______ bosco fino ______ cima ______ montagna.",
+      opcoes: [
+        "nel, alla, della",
+        "in, a, di",
+        "attraverso il, sulla, della",
+        "nel, sulla, della",
+      ],
+      resposta: "nel, alla, della",
       explicacao:
-        "A preposição é '<b>a</b>'. 'Amici' começa com vogal e é plural masculino, então o artigo é '<b>gli</b>'. A + GLI = <b>AGLI</b>.",
+        "'Snodarsi <b>in</b>' (IN+IL -> <b>nel</b>), 'fino <b>a</b>' (A+LA -> <b>alla</b>) e 'la cima <b>di</b>' (DI+LA -> <b>della</b>).",
     },
     {
-      pergunta: "5. La festa si terrà ______ piazza principale.",
-      opcoes: ["nella", "la", "in", "alla"],
-      resposta: "nella",
+      pergunta:
+        "5. L'ho incontrato per caso ______ ufficio postale, vicino ______ sportelli.",
+      opcoes: ["all', agli", "all', ai", "nell', ai", "all', dai"],
+      resposta: "all', agli",
       explicacao:
-        "A preposição é '<b>in</b>'. 'Piazza' é feminino singular, o artigo é '<b>la</b>'. IN + LA = <b>NELLA</b>.",
+        "O local é '<b>a</b>ll'ufficio postale' (A+L' -> <b>all'</b>). 'Vicino <b>a</b>gli sportelli' (A+GLI -> <b>agli</b>).",
     },
     {
-      pergunta: "6. Ho preso la ricetta ______ nonna.",
-      opcoes: ["la", "dalla", "da", "di"],
-      resposta: "dalla",
+      pergunta:
+        "6. La passione ______ antichi Romani è evidente ______ rovine del Foro.",
+      opcoes: [
+        "degli, nelle",
+        "per gli, dalle",
+        "degli, dalle",
+        "per gli, nelle",
+      ],
+      resposta: "per gli, nelle",
       explicacao:
-        "A preposição é '<b>da</b>' (origem). 'Nonna' é feminino singular, o artigo é '<b>la</b>'. DA + LA = <b>DALLA</b>.",
+        "A paixão '<b>per</b>' (PER+GLI -> <b>per gli</b>). As evidências estão '<b>in</b>' (IN+LE -> <b>nelle</b>).",
     },
     {
-      pergunta: "7. Parliamo ______ sport che preferiamo.",
-      opcoes: ["degli", "i", "di", "gli"],
-      resposta: "degli",
+      pergunta:
+        "7. Il rispetto ______ anziani è un valore fondamentale ______ nostra società.",
+      opcoes: [
+        "degli, della",
+        "per gli, nella",
+        "verso gli, della",
+        "per gli, della",
+      ],
+      resposta: "per gli, nella",
       explicacao:
-        "A preposição para tópico é '<b>di</b>'. 'Sport' é plural masculino e começa com 's+consoante', o artigo é '<b>gli</b>'. DI + GLI = <b>DEGLI</b>.",
+        "Usa-se 'rispetto <b>per</b>' (PER+GLI -> <b>per gli</b>). O local é '<b>in</b>' (IN+LA -> <b>nella</b>).",
     },
     {
-      pergunta: "8. Le chiavi sono ______ tavolo in cucina.",
-      opcoes: ["sul", "il", "su", "al"],
-      resposta: "sul",
+      pergunta:
+        "8. Sono dovuto ricorrere ______ avvocato per un problema ______ condominio.",
+      opcoes: ["all', del", "dal, di", "all', di", "dall', del"],
+      resposta: "all', del",
       explicacao:
-        "A preposição é '<b>su</b>'. O artigo para 'tavolo' é '<b>il</b>'. SU + IL = <b>SUL</b>.",
+        "'Ricorrere <b>a</b>' (A+L' -> <b>all'</b>). O problema é '<b>di</b>' (DI+IL -> <b>del</b>).",
     },
     {
-      pergunta: "9. La soluzione ______ problemi non è semplice.",
-      opcoes: ["i", "a", "gli", "ai"],
-      resposta: "ai",
+      pergunta:
+        "9. L'attenzione ______ dettagli fa la differenza ______ risultato.",
+      opcoes: ["ai, nel", "dei, sul", "per i, del", "ai, sul"],
+      resposta: "ai, nel",
       explicacao:
-        "A preposição é '<b>a</b>'. O artigo para 'problemi' (plural de 'problema') é '<b>i</b>'. A + I = <b>AI</b>.",
+        "A atenção '<b>a</b>' (A+I -> <b>ai</b>). A diferença está '<b>in</b>' (IN+IL -> <b>nel</b>).",
     },
     {
-      pergunta: "10. Il prossimo anno andrò ______ Stati Uniti.",
-      opcoes: ["negli", "nei", "in", "agli"],
-      resposta: "negli",
+      pergunta:
+        "10. La traduzione ______ Odissea è stata affidata ______ esperti del settore.",
+      opcoes: ["dell', agli", "dall', agli", "dell', ai", "dall', ai"],
+      resposta: "dell', agli",
       explicacao:
-        "Para países no plural, usa-se '<b>in</b>'. O artigo para 'Stati Uniti' é '<b>gli</b>'. IN + GLI = <b>NEGLI</b>.",
+        "A tradução '<b>di</b>' (DI+L' -> <b>dell'</b>). Foi confiada '<b>a</b>' (A+GLI -> <b>agli</b>).",
     },
   ],
   imperfetto: [
     {
-      pergunta: "1. Da bambino, io ______ la televisione ogni pomeriggio.",
-      opcoes: ["ho guardato", "guardavo", "guardo", "guarderò"],
-      resposta: "guardavo",
-      explicacao:
-        "A expressão 'Da bambino' (quando criança) indica uma ação habitual no passado, que pede o Imperfetto: <b>guardavo</b>.",
-    },
-    {
-      pergunta: "2. Quel giorno, il sole ______ e gli uccelli cantavano.",
-      opcoes: ["ha splenduto", "splende", "splendeva", "splenderà"],
-      resposta: "splendeva",
-      explicacao:
-        "Aqui estamos descrevendo o cenário ('o sol brilhava'), uma das funções principais do Imperfetto: <b>splendeva</b>.",
-    },
-    {
-      pergunta: "3. Mentre tu dormivi, io ______ la colazione.",
-      opcoes: ["ho preparato", "preparo", "preparavo", "preparerò"],
-      resposta: "preparavo",
-      explicacao:
-        "A palavra 'mentre' (enquanto) indica uma ação contínua no passado, que pede o Imperfetto: <b>preparavo</b>.",
-    },
-    {
-      pergunta: "4. Loro ______ sempre al mare d'estate.",
-      opcoes: ["vanno", "andranno", "andavano", "sono andati"],
-      resposta: "andavano",
-      explicacao:
-        "A palavra 'sempre' sinaliza uma ação habitual no passado, o uso clássico do Imperfetto: <b>andavano</b>.",
-    },
-    {
-      pergunta: "5. Quando tu mi hai chiamato, io ______ la doccia.",
-      opcoes: ["faccio", "ho fatto", "facevo", "farò"],
-      resposta: "facevo",
-      explicacao:
-        "A ação de 'tomar banho' era a ação contínua que estava acontecendo quando a outra (a chamada) a interrompeu. Por isso, usa-se o Imperfetto: <b>facevo</b>.",
-    },
-    {
-      pergunta: "6. Noi non ______ cosa fare.",
-      opcoes: ["abbiamo saputo", "sappiamo", "sapevamo", "sapremo"],
-      resposta: "sapevamo",
-      explicacao:
-        "Descreve um estado mental ou sentimento no passado ('nós não sabíamos'), pedindo o Imperfetto: <b>sapevamo</b>.",
-    },
-    {
-      pergunta: "7. La casa dove ______ da piccola era molto grande.",
-      opcoes: ["abito", "ho abitato", "abiterò", "abitavo"],
-      resposta: "abitavo",
-      explicacao:
-        "Descreve uma situação habitual e contínua no passado ('onde eu morava'), pedindo o Imperfetto: <b>abitavo</b>.",
-    },
-    {
-      pergunta: "8. Mentre ______ per strada, ______ un vecchio amico.",
+      pergunta:
+        "1. Ogni volta che ______ a trovarla, lei mi ______ una fetta di torta.",
       opcoes: [
-        "camminavo, ho incontrato",
-        "camminavo, incontravo",
-        "ho camminato, ho incontrato",
-        "cammino, incontro",
+        "andavo, offriva",
+        "sono andato, ha offerto",
+        "andavo, ha offerto",
+        "andai, offrì",
       ],
-      resposta: "camminavo, ho incontrato",
+      resposta: "andavo, offriva",
       explicacao:
-        "A ação de caminhar ('camminavo') é a longa (Imperfetto), e a de encontrar ('ho incontrato') é a curta que a interrompeu (Passato Prossimo).",
+        "Ambas as ações eram habituais e repetidas no passado. Portanto, ambas exigem o Imperfetto: <b>andavo, offriva</b>.",
     },
     {
-      pergunta: "9. Ieri sera ______ molto stanco, perciò non ______.",
+      pergunta:
+        "2. Non ______ cosa fare, perché nessuno mi ______ istruzioni precise.",
       opcoes: [
-        "sono stato, uscivo",
-        "ero, uscivo",
-        "ero, sono uscito",
-        "fui, uscii",
+        "sapevo, aveva dato",
+        "sapevo, dava",
+        "ho saputo, ha dato",
+        "sapevo, ha dato",
       ],
-      resposta: "ero, sono uscito",
+      resposta: "sapevo, aveva dato",
       explicacao:
-        "O estado de estar cansado ('ero') é uma descrição (Imperfetto), e a decisão de não sair ('non sono uscito') é uma ação pontual e concluída (Passato Prossimo).",
+        "O não saber era um estado contínuo (<b>sapevo</b>). A falta de instruções era um estado resultante de uma ação anterior (ou falta dela), pedindo o Trapassato Prossimo (<b>aveva dato</b>).",
     },
     {
-      pergunta: "10. Cosa ______ quando è iniziato a piovere?",
-      opcoes: ["hai fatto", "facevi", "fai", "farai"],
-      resposta: "facevi",
+      pergunta:
+        "3. Mentre ______ il progetto, ______ che i calcoli ______ sbagliati.",
+      opcoes: [
+        "rivedevo, mi sono accorto, erano",
+        "rivedevo, mi accorgevo, erano",
+        "ho rivisto, mi sono accorto, sono stati",
+        "rivedevo, mi accorgevo, furono",
+      ],
+      resposta: "rivedevo, mi sono accorto, erano",
       explicacao:
-        "A pergunta é sobre a ação contínua que estava acontecendo ('o que você estava fazendo?') quando a chuva começou. Por isso, usa-se o Imperfetto: <b>facevi</b>.",
+        "A revisão era contínua (<b>rivedevo</b>). A percepção do erro foi um ato pontual (<b>mi sono accorto</b>). O estado dos cálculos era uma descrição (<b>erano</b>).",
+    },
+    {
+      pergunta: "4. ______ un freddo pungente e la neve ______ fitta.",
+      opcoes: [
+        "Faceva, scendeva",
+        "Ha fatto, è scesa",
+        "Faceva, è scesa",
+        "Fece, scese",
+      ],
+      resposta: "Faceva, scendeva",
+      explicacao:
+        "Ambas as frases descrevem o cenário e as condições meteorológicas contínuas no passado. Ambas usam o Imperfetto.",
+    },
+    {
+      pergunta:
+        "5. ______ l'intenzione di chiamarti, ma poi ______ un imprevisto.",
+      opcoes: [
+        "Avevo, c'è stato",
+        "Ho avuto, c'era",
+        "Avevo, c'era",
+        "Ebbi, fu",
+      ],
+      resposta: "Avevo, c'è stato",
+      explicacao:
+        "A intenção era um estado mental contínuo (<b>Avevo</b>). O imprevisto foi um evento pontual que ocorreu (<b>c'è stato</b>).",
+    },
+    {
+      pergunta: "6. Il film non mi ______ per niente; infatti, a metà, ______.",
+      opcoes: [
+        "piaceva, me ne sono andato",
+        "è piaciuto, me ne andavo",
+        "piaceva, andavo via",
+        "mi piaceva, sono andato",
+      ],
+      resposta: "piaceva, me ne sono andato",
+      explicacao:
+        "A descrição do sentimento sobre o filme é contínua (<b>piaceva</b>). A ação de ir embora foi um ato único e conclusivo (<b>me ne sono andato</b>).",
+    },
+    {
+      pergunta: "7. Da giovani, ______ spesso in montagna e ______ per ore.",
+      opcoes: [
+        "andavamo, camminavamo",
+        "siamo andati, abbiamo camminato",
+        "andavamo, abbiamo camminato",
+        "andammo, camminammo",
+      ],
+      resposta: "andavamo, camminavamo",
+      explicacao:
+        "'Da giovani' indica um período de tempo habitual no passado. Ambas as ações eram repetidas e, portanto, usam o Imperfetto.",
+    },
+    {
+      pergunta: "8. Appena ______ gli occhi, ______ che ______ tardissimo.",
+      opcoes: [
+        "ho aperto, ho capito, era",
+        "aprivo, capivo, era",
+        "ho aperto, capivo, fu",
+        "aprii, compresi, era",
+      ],
+      resposta: "ho aperto, ho capito, era",
+      explicacao:
+        "As ações de abrir os olhos e entender são pontuais e sequenciais (<b>ho aperto, ho capito</b>). O estado da hora ('era tardi') é uma descrição (<b>era</b>).",
+    },
+    {
+      pergunta:
+        "9. Si ______ che lui ______ la persona giusta, ma poi ______ un'altra persona.",
+      opcoes: [
+        "pensava, era, si è rivelato",
+        "pensava, fosse, si rivelava",
+        "si pensava, era, si è rivelato",
+        "si pensava, fosse, si è rivelato",
+      ],
+      resposta: "si pensava, fosse, si è rivelato",
+      explicacao:
+        "Aqui um desafio B1/B2! A crença geral usa o Imperfetto impessoal (<b>si pensava</b>). A hipótese ou dúvida rege o Congiuntivo Imperfetto (<b>fosse</b>). A revelação final foi pontual (<b>si è rivelato</b>).",
+    },
+    {
+      pergunta:
+        "10. ______ un'atmosfera tesa: nessuno ______ e tutti ______ il respiro.",
+      opcoes: [
+        "C'era, parlava, tratteneva",
+        "C'è stata, parlava, tratteneva",
+        "C'era, ha parlato, ha trattenuto",
+        "Ci fu, parlò, trattenne",
+      ],
+      resposta: "C'era, parlava, tratteneva",
+      explicacao:
+        "Toda a frase é uma pura descrição de um cenário contínuo no passado. Todas as ações descrevem o estado da situação e usam o Imperfetto.",
     },
   ],
 };
