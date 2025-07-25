@@ -15,6 +15,22 @@
   margin: 0;
   padding: 0;
 }
+
+/* ANIMAÇÃO DE TRANSIÇÃO DE PÁGINA */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   line-height: 1.6;
@@ -45,6 +61,8 @@ footer {
   text-align: center;
   padding: 1rem 0;
 }
+
+/* BOTÕES E LINKS COM MICROINTERAÇÕES */
 .btn {
   display: inline-block;
   background-color: var(--primary-color);
@@ -57,12 +75,16 @@ footer {
   font-weight: 600;
   margin: 5px;
   cursor: pointer;
-  transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+  transition: background-color 0.2s, transform 0.2s, box-shadow 0.2s;
 }
 .btn:hover {
   background-color: #007a00;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+.btn:active {
+  transform: translateY(-1px) scale(0.98);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 .btn-back {
   display: inline-block;
@@ -71,6 +93,7 @@ footer {
   text-decoration: none;
   font-weight: 600;
 }
+
 .main-nav {
   margin-top: 2rem;
 }
@@ -98,18 +121,24 @@ footer {
   margin-bottom: 0.5rem;
 }
 #progress-bar {
+  display: flex;
   width: 100%;
   height: 10px;
-  background-color: var(--light-gray);
+  gap: 4px;
   border-radius: 5px;
   overflow: hidden;
 }
-#progress-bar-full {
-  height: 100%;
-  width: 0%;
-  background-color: var(--primary-color);
-  border-radius: 5px;
-  transition: width 0.4s ease-in-out;
+.progress-segment {
+  flex: 1;
+  background-color: var(--light-gray);
+  border-radius: 3px;
+  transition: background-color 0.4s ease-in-out;
+}
+.progress-segment.correct {
+  background-color: var(--correct-color);
+}
+.progress-segment.incorrect {
+  background-color: var(--incorrect-color);
 }
 #question-text {
   font-size: 1.6rem;
@@ -139,11 +168,16 @@ footer {
   cursor: pointer;
   border-radius: 10px;
   position: relative;
-  transition: all 0.2s;
+  transition: all 0.2s ease-in-out;
 }
 .answer-btn:hover:not([disabled]) {
   border-color: var(--primary-color);
   color: var(--primary-color);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+}
+.answer-btn:active:not([disabled]) {
+  transform: translateY(-1px) scale(0.99);
 }
 .answer-btn[disabled] {
   cursor: not-allowed;
@@ -206,6 +240,7 @@ footer {
 }
 #score-text {
   font-size: 1.2rem;
+  font-weight: 600;
   margin: 1rem 0 2rem 0;
 }
 .score-buttons {
@@ -232,15 +267,18 @@ footer {
   background: var(--white-color);
   padding: 1.5rem;
   border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
   text-decoration: none;
-  color: var(--primary-color);
+  color: var(--dark-color);
   font-weight: 600;
-  border: 2px solid transparent;
-  transition: border-color 0.3s, color 0.3s;
+  border: 2px solid var(--white-color);
+  transition: all 0.2s ease-in-out;
 }
 .quiz-link:hover {
   border-color: var(--primary-color);
+  color: var(--primary-color);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 #explanation-box {
   margin-top: 2rem;
@@ -261,16 +299,6 @@ footer {
   margin-right: 0.75rem;
   font-size: 1.2rem;
   float: left;
-}
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 .hidden {
   display: none;

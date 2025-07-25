@@ -6,15 +6,13 @@
     <title>Progetto Mamma - Quiz</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body>
+  <body class="fade-in">
     <div class="quiz-page-wrapper">
       <div class="quiz-container">
         <div id="quiz-box">
           <div class="quiz-header">
             <div id="progress-text" class="progress-info">Pergunta 1 / 10</div>
-            <div id="progress-bar">
-              <div id="progress-bar-full"></div>
-            </div>
+            <div id="progress-bar"></div>
           </div>
           <h2 id="question-text">Pergunta do quiz aparece aqui</h2>
           <div id="answer-buttons" class="btn-grid"></div>
@@ -27,7 +25,7 @@
         </div>
         <div id="score-container" class="hidden">
           <h2>Quiz Finalizado!</h2>
-          <p id="score-text">Sua pontuação foi X de Y.</p>
+          <p id="score-text">Sua pontuação final foi 0 de 10.</p>
           <div class="score-buttons">
             <a href="praticare.html" class="btn">Tentar Outro Quiz</a>
             <a href="studiare.html" class="btn-back">Voltar para os Estudos</a>
@@ -35,6 +33,9 @@
         </div>
       </div>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+
     <script src="js/quiz-data.js"></script>
     <script src="js/quiz.js"></script>
   </body>
